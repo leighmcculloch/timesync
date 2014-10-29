@@ -60,5 +60,5 @@ activate :cdn do |cdn|
   }
 
   cdn.filter = /^index.html$/
-  cdn.after_build = false
+  cdn.after_build = true
 end
