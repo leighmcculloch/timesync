@@ -1,0 +1,26 @@
+.content
+  .section.section-time
+  .section.section-time
+    %h1
+      = "Your&nbsp;"
+      %span.device>= "computer"
+      = "'s time is"
+    .time
+    .time-utc
+  .section.section-actual-time
+    %h1= "The actual time is"
+    .actual-time= "..."
+    .actual-time-utc
+  .section.section-message-happy{style: "display:none"}
+    %i.icon-happy
+    .message.happy= "You're good"
+  .section.section-message-unhappy{style: "display:none"}
+    %i.icon-unhappy.unhappy
+    .message.unhappy
+      = "Your&nbsp;"
+      %span.device>= "computer"
+      = "'s time or timezone"
+      %br
+      = "is off by&nbsp;"
+      %span.message-minutes>
+      = ", check your date and time settings"

@@ -1,0 +1,65 @@
+/*
+ *= require _fonts
+ *= require _reset
+ */
+
+/* Layout */
+
+body {
+	margin:2em;
+}
+
+.page {
+	margin:auto;
+}
+
+.section {
+	margin:1.5em auto;
+	text-align:center;
+}
+
+/* Styles */
+
+body {
+	font-family:"Lato", serif;
+	font-size:1.25em;
+	line-height:1.25;
+	-webkit-text-size-adjust:120%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight:400;
+}
+
+h1 {
+  font-size:1.5em;
+  font-weight:700;
+  line-height:1.5;
+}
+
+.time, .time-utc, .actual-time, .actual-time-utc {
+  font-family:"Inconsolata", monospace;
+}
+
+.icon-happy {
+  font-size:6em;
+}
+
+.icon-unhappy {
+  font-size:4em;
+}
+
+.message {
+  font-size:1.5em;
+  font-weight:700;
+}
+
+.icon-happy,
+.message.happy {
+  color:#75FF77;
+}
+
+.icon-unhappy,
+.message.unhappy {
+  color:#FF7575;
+}

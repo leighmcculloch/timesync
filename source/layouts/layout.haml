@@ -1,0 +1,14 @@
+%html
+  %head
+    %meta{:content => "IE=edge,chrome=1", :"http-equiv" => "X-UA-Compatible" }
+    %meta{:name => "viewport", :content => "width=520"}
+
+    %title= "Time Sync"
+
+    %meta{:name => "description", :content => "Tells you what computer or phone time and timezone is, and how accurate it is."}
+
+    = stylesheet_link_tag(:style)
+    = javascript_include_tag(:main, :async => "async")
+
+  %body.page
+    = yield
