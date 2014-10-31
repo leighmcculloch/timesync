@@ -56,7 +56,7 @@ activate :cdn do |cdn|
   # leighmcculloch.com
   cdn.cloudflare = {
     zone: 'timesync.co',
-    base_urls: ['http://timesync.co']
+    base_urls: ['https://timesync.co']
   }
 
   cdn.filter = /^index.html$/
