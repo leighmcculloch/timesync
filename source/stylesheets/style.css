@@ -63,3 +63,18 @@ h1 {
 .message.unhappy {
   color:#FF7575;
 }
+
+.footer {
+  position:absolute;
+  bottom:10px;
+  left:0;
+  width:100%;
+  text-align:center;
+  font-family:sans-serif;
+  font-size:0.6em;
+  color:#ccc;
+}
+
+.footer a {
+  color:inherit; 
+}
