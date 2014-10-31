@@ -4,8 +4,8 @@
  *= require _moment
  */
 
- TIME_FORMAT = 'YYYY MMM Do, hh:mm:ss a Z';
- THRESHOLD_MINUTES = 15;
+TIME_FORMAT = 'YYYY MMM Do, hh:mm:ss a Z';
+THRESHOLD_MINUTES = 15;
 
 if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
   $('.device').html('phone');
