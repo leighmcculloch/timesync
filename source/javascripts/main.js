@@ -22,7 +22,7 @@ function update_times() {
 
   $.ajax({
     type: 'GET',
-    url: '/time.js',
+    url: 'time.js',
     cache: false,
     success: function(data, textStatus, request) {
       server_time_utc_string = request.getResponseHeader('Date');
