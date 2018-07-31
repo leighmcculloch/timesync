@@ -1,5 +1,3 @@
-export CLOUDFLARE_ZONE = 8a3d9b8d846d19f1f8b3b3fb73014182
-
 run:
 	bundle exec middleman
 
@@ -20,10 +18,3 @@ push-github:
 		git subtree split --prefix build -b gh-pages && \
 		git push --force origin gh-pages:gh-pages && \
 		git checkout -
-
-cdn:
-	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CLOUDFLARE_ZONE)/purge_cache" \
-		-H "X-Auth-Email: $(CLOUDFLARE_EMAIL)" \
-		-H "X-Auth-Key: $(CLOUDFLARE_CLIENT_API_KEY)" \
-		-H "Content-Type: application/json" \
-		--data '{"purge_everything":true}'
